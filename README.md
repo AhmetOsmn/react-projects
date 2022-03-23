@@ -1,2 +1,3 @@
 # react-projects
-react öğrenmek için yaptığım projeleri içerir.
+
+React öğrenmek için yaptığım projeleri içerir.
