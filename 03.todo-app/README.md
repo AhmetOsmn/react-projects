@@ -8,6 +8,8 @@ Projeyi çalıştırmak için
 
     npm start
 
-# [DEMO]()
+# [DEMO](https://03-todo-app.netlify.app/)
 
 # Ekran Görüntüleri
+
+![03todoapp](https://user-images.githubusercontent.com/44196434/159993125-5ab7571a-92ef-4766-a99a-708e819da53a.png)
