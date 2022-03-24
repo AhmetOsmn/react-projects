@@ -1,10 +1,5 @@
 export const initialState = {
-  todos: [
-    {
-      id: 0,
-      content: "Ben ilk TODO'yum"
-    }
-  ],
+  todos: [],
 };
 
 const reducer = (state, action) => {
@@ -14,6 +9,7 @@ const reducer = (state, action) => {
     case "ADD_TODO":
       return {
         ...state,
+        todos: [action.payload,...state.todos]
       };
 
     default:

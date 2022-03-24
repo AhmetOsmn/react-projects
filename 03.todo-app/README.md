@@ -11,4 +11,3 @@ Projeyi çalıştırmak için
 # [DEMO]()
 
 # Ekran Görüntüleri
-26:30
