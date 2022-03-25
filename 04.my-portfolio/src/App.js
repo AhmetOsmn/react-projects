@@ -106,11 +106,11 @@ function App() {
                       </div>
 
                       <div className="flex items-center space-x-8">
-                        <a href="/projects">
-                          <a className="transition duration-300">Projects</a>
+                        <a clas href="/projects">
+                          <a className="transition duration-300 text-blue-500">Projects</a>
                         </a>
                         <a href="/articles">
-                          <a className="transition duration-300">Articles</a>
+                          <a className="transition duration-300 text-blue-500">Articles</a>
                         </a>
                       </div>
                     </code>
