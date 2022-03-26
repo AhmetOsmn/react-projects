@@ -1,23 +1,9 @@
 [
-    {
-        "id":1,
-        "title": "deneme makale 1",
-        "description": "deneme makale 1 desc",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "source": "link"
-    },
-    {
-        "id":2,
-        "title": "deneme makale 2",
-        "description": "deneme makale 2 desc",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "source": "link"
-    },
-    {
-        "id":3,
-        "title": "deneme makale 3",
-        "description": "deneme makale 3 desc",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "source": "link"
-    }
+  {
+    "id": 1,
+    "title": "Henüz bir yazı yayınlamadım.",
+    "description": "",
+    "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    "source": ""
+  }
 ]

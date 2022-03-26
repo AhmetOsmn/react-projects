@@ -1,26 +1,66 @@
 [
-    {
-        "id":1,
-        "title": "deneme 1",
-        "description": "deneme 1 desc",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "source": "https://github.com/AhmetOsmn/Mvc-Kamp",
-        "tags" : ["tag1", "tag2"]
-    },
-    {
-        "id":2,
-        "title": "deneme 2",
-        "description": "deneme 2 desc",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "source": "link",
-        "tags" : ["tag1", "tag2"]
-    },
-    {
-        "id":3,
-        "title": "deneme 3",
-        "description": "deneme 3 desc",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "source": "link",
-        "tags" : ["tag1", "tag2"]
-    }
+  {
+    "id": 8,
+    "title": "Supplier Web API",
+    "description": ".Net Core 5 ile geliştirdiğim RESTful API. Patika üzerinden aldığım Başlangıç seviyesi ve Orta Seviye .Net Core eğitimlerini pekiştirmek için ve daha farklı konuları araştırma açısından bana çok faydalı olan bir proje.",
+    "image": "https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/jkyWIPrSq90rNmBvfeJg",
+    "source": "https://github.com/AhmetOsmn/supplier",
+    "tags": ["c#", "mysql", "docker"]
+  },
+  {
+    "id": 7,
+    "title": "MVC ile Sözlük Projesi",
+    "description": "Murat Yücedağ'ın Youtube'de paylaştığı 100 Derslik MVC Kampı ile geliştirdiğim, Ekşi sözlük yapısında, yazar ve admin girişleri olan sözlük sitesi. ",
+    "image": "https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/2Cy0JzVXQeNPQwKiC1Cv",
+    "source": "https://github.com/AhmetOsmn/Mvc-Kamp",
+    "tags": ["c#", "asp.net mvc", "ef"]
+  },
+  {
+    "id": 6,
+    "title": "Rent A Car",
+    "description": "Engin Demiroğ'un Youtube üzerinden yayınladığı C# Kampı boyunca, verilen ödevler ile birlikle araştırmalar yaparak eğitime katılan öğrencilerin geliştirdiği araba kiralama sitesi. Frontend ve Backend Github'ta ayrı ayrı bulunuyor. Backend kısmına da Github'tanbakabilirsiniz.",
+    "image": "https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/9bOfFRBdRMFgHWaa4mcA",
+    "source": "https://github.com/AhmetOsmn/ReCapProject-Frontend",
+    "tags": ["c#", "angular", "typescript"]
+  },
+  {
+    "id": 5,
+    "title": "Frontend Examples",
+    "description": "Tayfun Erbilen'in Youtube üzerinden paylaştığı eğitim serisini takip ederek geliştirdiğim 31 adet frontend projesi. Her projenin demo linki ve kodları repo içerisinde yer almaktadır. İncelemek isterseniz Github'tan bakabilirisiniz.",
+    "image": "https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/JTSvwlnlSlmppQCL5HyF",
+    "source": "https://github.com/AhmetOsmn/frontend-examples",
+    "tags": ["html", "css", "scss", "js"]
+  },
+  {
+    "id": 4,
+    "title": "Öğrenci Bilgi Sistemi",
+    "description": "Murat Yücedağ'ın eğitimini takip ederek geliştirdiğim basit CRUD işlemlerinin yapıldığı bir Öğrenci Bilgi Sistemi projesi.",
+    "image": "https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/9UbFkvN4RAeKC8kZ1eoZ",
+    "source": "https://github.com/AhmetOsmn/OgrenciBilgiSistemi",
+    "tags": ["c#", "asp.net", "mssql"]
+  },
+  {
+    "id": 3,
+    "title": "Ürün Satış Sistemi",
+    "description": "Murat Yücedağ'ın eğitimini takip ederek geliştirdiğim basit CRUD işlemlerinin yapıldığı bir Ürün Satış Sistemi projesi.",
+    "image": "https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/rq65gi9xSoOXzXGxlKYg",
+    "source": "https://github.com/AhmetOsmn/UrunSatisSistemi",
+    "tags": ["c#", "asp.net", "mssql"]
+  },
+  {
+    "id": 2,
+    "title": "25 Windows Forms App",
+    "description": "Murat Yücedağ'ın 25 Proje eğitiminde geliştirdiğimiz Windows Forms uygulamalarını içeren repository. Repo içerisinde projeler ve ekran görüntüleri yer almaktadır.",
+    "image": "https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/bFaPW2PbQXyW31c6w0nA",
+    "source": "https://github.com/AhmetOsmn/25Project",
+    "tags": ["c#", "mssql", "windows forms"]
+  },
+  {
+    "id": 1,
+    "title": "JS Examples",
+    "description": "Damla Kayalı, codingwithdidem, PROTOTURK kanallarını takip ederek geliştirdiğim projeleri içeren repository. 2 Adet clone uygulaması ve basit JS projeleri içeriyor. Getir anasayfası'nın demo linki projenin içerisinde yer almaktadır.",
+    "image": "https://media.graphcms.com/output=format:jpg/resize=height:800,fit:max/x5FVDY8TpKjDxfdETB31",
+    "source": "https://github.com/AhmetOsmn/JS-Examples",
+    "tags": ["html", "css", "js"]
+  }
 ]
