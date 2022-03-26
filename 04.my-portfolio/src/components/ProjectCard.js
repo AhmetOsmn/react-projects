@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function ProjectCard({project: {title, description, image, source, tags}}) {
+function ProjectCard({ project: { title, description, image, source, tags } }) {
   return (
     <motion.a
       href={source}

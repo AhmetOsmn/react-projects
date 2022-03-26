@@ -1,10 +1,7 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      
       colors: {
         "primary-light": "#D8E3E7",
         "secondary-light": "#94B49F",
@@ -13,7 +10,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography")
-  ],
-}
+  plugins: [require("@tailwindcss/typography")],
+};

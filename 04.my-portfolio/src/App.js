@@ -79,44 +79,58 @@ function App() {
             </div>
 
             <article className="mt-3 prose md:mt-4 md:prose-lg dark:prose-dark">
-                <div>
-                  <pre>
-                    <code className="language-js">
-                      <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
-                        <span>// Portfolio.js </span>
+              <div>
+                <pre>
+                  <code className="language-js">
+                    <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
+                      <span>// Portfolio.js </span>
+                    </div>
+                    <p>
+                      Kullandığım ve öğrenmeye devam etmek istediğim
+                      teknolojiler:
+                    </p>
+                    <div className="flex items-center space-x-4">
+                      <div className="">
+                        <p className="text-sm">
+                          <span className="text-pink-300 font-bold">
+                            {" "}
+                            {"> Backend:"}{" "}
+                          </span>
+                          ["ASP.NET Core", "ASP.NET MVC", "Java Spring"]{" "}
+                        </p>
+                        <p className="text-sm">
+                          <span className="text-pink-300 font-bold">
+                            {" "}
+                            {"> Frontend:"}{" "}
+                          </span>
+                          ["React", "HTML", "CSS", "JS"]{" "}
+                        </p>
+                        <p className="text-sm">
+                          <span className="text-pink-300 font-bold">
+                            {" "}
+                            {"> Database:"}{" "}
+                          </span>
+                          ["MSSQL", "MySQL"]{" "}
+                        </p>
                       </div>
-                      <p>
-                        Kullandığım ve öğrenmeye devam etmek istediğim teknolojiler:
-                      </p>
-                      <div className="flex items-center space-x-4">
-                        <div className="">
-                          <p className="text-sm">
-                            <span className="text-pink-300 font-bold"> {"> Backend:"} </span> 
-                            ["ASP.NET Core", "ASP.NET MVC", "Java Spring"]{" "}
-                          </p>
-                          <p className="text-sm">
-                            <span className="text-pink-300 font-bold"> {"> Frontend:"} </span>
-                            ["React", "HTML", "CSS", "JS"]{" "}
-                          </p>
-                          <p className="text-sm">
-                            <span className="text-pink-300 font-bold"> {"> Database:"} </span>
-                            ["MSSQL", "MySQL"]{" "}
-                          </p>
-                        </div>
-                      </div>
+                    </div>
 
-                      <div className="flex items-center space-x-8">
-                        <a clas href="/projects">
-                          <a className="transition duration-300 text-blue-500">Projects</a>
+                    <div className="flex items-center space-x-8">
+                      <a clas href="/projects">
+                        <a className="transition duration-300 text-blue-500">
+                          Projects
                         </a>
-                        <a href="/articles">
-                          <a className="transition duration-300 text-blue-500">Articles</a>
+                      </a>
+                      <a href="/articles">
+                        <a className="transition duration-300 text-blue-500">
+                          Articles
                         </a>
-                      </div>
-                    </code>
-                  </pre>
-                </div>
-              </article>
+                      </a>
+                    </div>
+                  </code>
+                </pre>
+              </div>
+            </article>
           </section>
         </main>
       </Layout>
