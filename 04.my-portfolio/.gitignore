@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-./src/projects
-./src/articles
+articles.json
+projects.json
