@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function ProjectCard({project: {title, description, image, source, tags}}) {
+function ArticleCard({ article: { title, description, image, source } }) {
   return (
     <motion.a
       href={source}
       target="_blank"
       rel="noopener noreferrer"
-      className="rounded-xl w-full bg-gradient-to-r from-[#e07ef8] via-[#3B82F6] to-[#9333EA] p-1 hover:cursor-pointer shadow-lg"
+      className="rounded-xl w-full bg-gradient-to-r from-[#586d65] via-[#449164] to-[#ecae67] p-1 hover:cursor-pointer shadow-lg"
       whileHover={{ y: -10, scale: 1.05, transition: { duration: 0.4 } }}
     >
       <div className="w-full h-full p-4 bg-white rounded-lg dark:bg-gray-900">
@@ -21,21 +21,10 @@ function ProjectCard({project: {title, description, image, source, tags}}) {
             {title}
           </h2>
           <p className="text-md">{description}</p>
-
-          <div className="flex items-center space-x-4">
-            {tags.map((tag, key) => (
-              <span
-                key={key}
-                className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-pink-100 bg-pink-700 rounded"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </motion.a>
   );
 }
 
-export default ProjectCard;
+export default ArticleCard;
