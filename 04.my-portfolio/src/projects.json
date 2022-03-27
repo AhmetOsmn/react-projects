@@ -1,5 +1,29 @@
 [
   {
+    "id": 11,
+    "title": "POrtfolyo Sitesi",
+    "description": "Codingwithdidem kanalında paylaşılan Next JS projesini React kullanarak ve biraz değiştirerek geliştirmeye çalışıyorum ve kendim de bu siteyi kullanıyorum.",
+    "image": "https://user-images.githubusercontent.com/44196434/160198930-3018a30d-56b5-42a4-af9a-6e88d764aec9.png",
+    "source": "https://github.com/AhmetOsmn/react-projects/tree/main/04.my-portfolio",
+    "tags": ["react"]
+  },
+  {
+    "id": 10,
+    "title": "TODO Uygulaması",
+    "description": "React'a yeni başladığım için bana oldukça faydalı olan bir proje. Codingwithdidem kanalında paylaşılan eğitimi izleyerek geliştirdim.",
+    "image": "https://user-images.githubusercontent.com/44196434/159993125-5ab7571a-92ef-4766-a99a-708e819da53a.png",
+    "source": "https://github.com/AhmetOsmn/react-projects/tree/main/03.todo-app",
+    "tags": ["react"]
+  },
+  {
+    "id": 9,
+    "title": "Para Harcama Uygulaması",
+    "description": "Tayfun Erbilen'in eğitim videosu ile geliştirdiğim React projesi. React öğrenirken faydalı olacağını düşündüğüm bir proje.",
+    "image": "https://user-images.githubusercontent.com/44196434/159803490-0beda062-b0c3-4ac7-9c6e-8b7d745fd7b8.png",
+    "source": "https://github.com/AhmetOsmn/react-projects/tree/main/02.para-harcama-uygulamasi",
+    "tags": ["react"]
+  },
+  {
     "id": 8,
     "title": "Supplier Web API",
     "description": ".Net Core 5 ile geliştirdiğim RESTful API. Patika üzerinden aldığım Başlangıç seviyesi ve Orta Seviye .Net Core eğitimlerini pekiştirmek için ve daha farklı konuları araştırma açısından bana çok faydalı olan bir proje.",
