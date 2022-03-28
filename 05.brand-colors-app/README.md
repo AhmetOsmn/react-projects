@@ -12,4 +12,4 @@ Proje içerisnde markaların renklerini görebiliyoruz, renk kodlarını alabili
         yarn add node-sass
         yarn add react-modal
         yarn add react-icons
-
+        yarn add react-clipboard.js

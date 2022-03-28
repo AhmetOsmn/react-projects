@@ -70,6 +70,17 @@ body {
   }
 }
 
+.copied {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0099e5;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
 .content {
   flex: 1;
   overflow: auto;
@@ -119,25 +130,38 @@ body {
       background: #fff;
       padding: 15px;
       margin-bottom: 18px;
-
       h5 {
         font-size: 15px;
         margin-bottom: 10px;
+        cursor: pointer;
       }
 
-      .brand-colors {
+      &-colors {
         display: flex;
 
         span {
           background: var(--bgColor);
-          flex: 1;
+          cursor: pointer;
           height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
           font-size: 14px;
           font-weight: 500;
-          color: #fff;
+          color: var(--textColor);
+          text-indent: -9999px;
+          width: 70px;
+        }
+      }
+
+      &.selected {
+        border-color: red;
+
+        .brand-colors {
+          span {
+            flex: 1;
+            text-indent: 0;
+          }
         }
       }
     }
