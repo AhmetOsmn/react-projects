@@ -14,6 +14,7 @@ function Content() {
       </header>
       <section className="brands">
         {brands.map((brand) => (
+          // TODO: Placeholder duzenlenecek
           <LazyLoad key={brand.slug} once={true} overflow={true} placeholder="Yükleniyor...">
             <Brand brand={brand} />
           </LazyLoad>
