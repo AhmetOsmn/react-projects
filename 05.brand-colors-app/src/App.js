@@ -6,6 +6,7 @@ import BrandsData from "./brands.json";
 import Content from "./components/Content";
 import Sidebar from "./components/Sidebar";
 import Copied from "./components/Copied";
+import Search from "./components/Search";
 
 function App() {
 
@@ -18,12 +19,27 @@ function App() {
   const [brands, setBrands] = useState(brandsArray);
   const [selectedBrands, setSelectedBrands] = useState([]);
   const [copied, setCopied] = useState(false);
+  const [search, setSearch] = useState('');
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setCopied(false);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  },[copied])
+
+  useEffect(() => {
+    setBrands(brandsArray.filter(brand => brand.title.toLowerCase().includes(search.toLowerCase())));
+  }, [search])
 
   const data = {
     brands,
     selectedBrands,
     setSelectedBrands,
-    setCopied
+    setCopied,
+    search,
+    setSearch
   }
 
   return (

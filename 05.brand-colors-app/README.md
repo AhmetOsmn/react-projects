@@ -13,3 +13,4 @@ Proje içerisnde markaların renklerini görebiliyoruz, renk kodlarını alabili
         yarn add react-modal
         yarn add react-icons
         yarn add react-clipboard.js
+        yarn add react-lazyload
