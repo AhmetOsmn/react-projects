@@ -91,7 +91,53 @@ body {
     border-bottom: 1px solid #ccc;
     display: flex;
     position: sticky;
+    justify-content: space-between;
     top: 0;
+    background: #fff;
+    align-items: center;
+
+    .download {
+      padding-right: 25px;
+      display: flex;
+      align-items: center;
+
+      .actions {
+        display: flex;
+        margin-right: 15px;
+
+        a, button {
+          height: 30px;
+          width: 30px;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          svg {
+            height: 15px;
+            width: 15px;
+          }
+        }
+      }
+
+      .selected {
+        font-size: 14px;
+        font-weight: 500;
+        color:  #999;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        svg {
+          display: block;
+          margin-right: 7px;
+          
+          path {
+            stroke: #999;
+          }
+        }
+      }
+    }
 
     .search {
       flex: 1;
