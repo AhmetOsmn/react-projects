@@ -4,7 +4,7 @@ Merhaba, bu projeyi PROTOTÜRK kanalındaki [şu eğitimi](https://www.youtube.c
 
 Proje içerisnde markaların renklerini görebiliyoruz, renk kodlarını alabiliyoruz vb. işlemleri de yapabiliyoruz. Gerçek siteye [buradan](https://brandcolors.net/) ulaşabilirsiniz.
 
-# Demo
+# [Demo](https://05-brand-colors-app.netlify.app)
 
 # Paketler
 
@@ -15,4 +15,7 @@ Proje içerisnde markaların renklerini görebiliyoruz, renk kodlarını alabili
         yarn add react-lazyload
         yarn add react-router-dom
         yarn add react-content-loader
-        yarn add react-virtualized
+
+# Ekran Görüntüleri
+
+
