@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
-import MainContext from "../MainContext";
 import { GrLink, GrDownload, GrClose } from "react-icons/gr";
+import { Link } from "react-router-dom";
+
+import MainContext from "../MainContext";
 
 function Download() {
   const { selectedBrands, brands, setSelectedBrands } = useContext(MainContext);
@@ -40,6 +42,9 @@ function Download() {
             });
           });
           break;
+
+        default:
+          break;
       }
 
       const blob = new Blob([output]);
@@ -52,27 +57,20 @@ function Download() {
     }
   }, [selectedBrands, cssMethod]);
 
-  const getLink = () => {
-    prompt(
-      "Here's thu URL to share",
-      `httlp://localhost:3000/collection/${selectedBrands.join(",")}`
-    );
-  };
-
   return (
     <div className="download">
       <div className="actions">
-        <a download={`brands.${cssMethod}`} href={downloadUrl}>
-          <GrDownload />
-        </a>
         <select onChange={(e) => setCssMethod(e.target.value)}>
           <option value="css">CSS</option>
           <option value="scss">SCSS</option>
           <option value="less">LESS</option>
         </select>
-        <button onClick={getLink}>
+        <a download={`brands.${cssMethod}`} href={downloadUrl}>
+          <GrDownload />
+        </a>
+        <Link to={`collection/${selectedBrands.join(",")}`}>
           <GrLink />
-        </button>
+        </Link>
       </div>
       <div className="selected" onClick={() => setSelectedBrands([])}>
         <GrClose />
@@ -83,5 +81,3 @@ function Download() {
 }
 
 export default Download;
-
-// 1:00:00 dakaldım

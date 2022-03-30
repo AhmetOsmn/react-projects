@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
-import MainContext from "../MainContext";
-import { getContrastYIQ } from "../helpers";
 import ClipboardButton from "react-clipboard.js";
+import React, { useContext } from "react";
+
+import { getContrastYIQ } from "../helpers";
+import MainContext from "../MainContext";
 
 function Brand({ brand }) {
-  const { selectedBrands, setSelectedBrands, setCopied } = useContext(MainContext);
+  const { selectedBrands, setSelectedBrands, setCopied } =
+    useContext(MainContext);
 
   const toggleSelected = () => {
     if (selectedBrands.includes(brand.slug)) {
@@ -16,7 +18,7 @@ function Brand({ brand }) {
 
   const setColor = (color) => {
     setCopied(color);
-  }
+  };
 
   return (
     <div
