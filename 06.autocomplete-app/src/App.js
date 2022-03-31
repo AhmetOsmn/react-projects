@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+const data = [
+  {
+    id: 1,
+    title: "test 1",
+  },
+  {
+    id: 2,
+    title: "Test 2",
+  },
+  {
+    id: 3,
+    title: "deneme 1",
+  },
+  {
+    id: 4,
+    title: "Deneme 2",
+  },
+];
 
 function App() {
+  const [search, setSearch] = useState("");
+  const [result, setResult] = useState("");
+
+  useEffect(() => {
+    if(search)
+    {
+      setResult(data.filter(item => item.title.toLowerCase().includes(search.toLowerCase())))
+    }
+    else {
+      setResult([])
+    }
+  }, [search])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="search">
+        <input
+          type="text"
+          placeholder="Bir şeyler ara..."
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        {result && (
+          
+          <div className="search-result">
+            {result.map(item => (
+              <div key={item.id} className="search-result-item">{item.title}</div>
+            ))}
+          </div>
+        
+        )}
+      </div>
+    </>
   );
 }
 
