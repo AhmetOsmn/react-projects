@@ -1,5 +1,13 @@
 [
   {
+    "id": 12,
+    "title": "Brand Colors App",
+    "description": "Girilen markanın kullandığı renkleri bulmamızı sağlar. PROTOTURK kanalında yayınlanan eğitimi takip ederek geliştirdim.",
+    "image": "https://user-images.githubusercontent.com/44196434/160731244-7204ff0f-4069-4493-a1f0-24eec6e584a2.png",
+    "source": "https://github.com/AhmetOsmn/react-projects/tree/main/05.brand-colors-app",
+    "tags": ["react"]
+  },
+  {
     "id": 11,
     "title": "Portfolyo Sitesi",
     "description": "Codingwithdidem kanalında paylaşılan Next JS projesini React kullanarak ve biraz değiştirerek geliştirmeye çalışıyorum ve kendim de bu siteyi kullanıyorum.",
