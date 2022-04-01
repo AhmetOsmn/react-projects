@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 const data = [
   {
     id: 1,
@@ -20,34 +20,59 @@ const data = [
 
 function App() {
   const [search, setSearch] = useState("");
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState(false);
+  const searchRef = useRef();
+
+  const isTyping = search.replace(/\s+/, "").length > 0;
 
   useEffect(() => {
-    if(search)
-    {
-      setResult(data.filter(item => item.title.toLowerCase().includes(search.toLowerCase())))
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleClickOutside = (e) => {
+    if (searchRef.current && !searchRef.current.contains(e.target)) {
+      setSearch("");
     }
-    else {
-      setResult([])
+  };
+
+  useEffect(() => {
+    if (isTyping) {
+      const filteredData = data.filter((item) =>
+        item.title.toLowerCase().includes(search.toLowerCase())
+      );
+      setResult(filteredData.length > 0 ? filteredData : false);
+    } else {
+      setResult(false);
     }
-  }, [search])
+  }, [search]);
 
   return (
     <>
-      <div className="search">
+      <div className="search" ref={searchRef}>
         <input
+          className={isTyping ? "typing" : null}
+          value={search}
           type="text"
           placeholder="Bir şeyler ara..."
           onChange={(e) => setSearch(e.target.value)}
         />
-        {result && (
-          
+        {isTyping && (
           <div className="search-result">
-            {result.map(item => (
-              <div key={item.id} className="search-result-item">{item.title}</div>
-            ))}
+            {result &&
+              result.map((item) => (
+                <div key={item.id} className="search-result-item">
+                  {item.title}
+                </div>
+              ))}
+            {!result && (
+              <div className="result-not-found">
+                "{search}" için sonuç bulunamadı.
+              </div>
+            )}
           </div>
-        
         )}
       </div>
     </>
