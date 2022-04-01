@@ -14,5 +14,5 @@ React öğrenmek için yaptığım projeleri içerir.
 
 - [BrandColors Uygulaması](https://github.com/AhmetOsmn/react-projects/tree/main/05.brand-colors-app) --- [Canlı](https://05-brand-colors-app.netlify.app/)
 
-- [Autocomplete](https://github.com/AhmetOsmn/react-projects/tree/main/06.autocomplete-app) --- [Canlı]()
+- [Autocomplete](https://github.com/AhmetOsmn/react-projects/tree/main/06.autocomplete-app) --- [Canlı](https://06-autocomplete.netlify.app/)
 
