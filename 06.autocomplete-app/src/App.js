@@ -1,29 +1,20 @@
 import { useEffect, useRef, useState } from "react";
-const data = [
-  {
-    id: 1,
-    title: "test 1",
-  },
-  {
-    id: 2,
-    title: "Test 2",
-  },
-  {
-    id: 3,
-    title: "deneme 1",
-  },
-  {
-    id: 4,
-    title: "Deneme 2",
-  },
-];
 
 function App() {
   const [search, setSearch] = useState("");
   const [result, setResult] = useState(false);
+  const [data, setData] = useState([]);
   const searchRef = useRef();
 
   const isTyping = search.replace(/\s+/, "").length > 0;
+
+  useEffect(() => {
+    fetch('https://restcountries.com/v3.1/all')
+      .then(response => response.json())
+      .then(response => setData(response))
+  }, [])
+
+  console.log(data)
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
@@ -41,7 +32,7 @@ function App() {
   useEffect(() => {
     if (isTyping) {
       const filteredData = data.filter((item) =>
-        item.title.toLowerCase().includes(search.toLowerCase())
+        item.name.common.toLowerCase().includes(search.toLowerCase())
       );
       setResult(filteredData.length > 0 ? filteredData : false);
     } else {
@@ -56,7 +47,7 @@ function App() {
           className={isTyping ? "typing" : null}
           value={search}
           type="text"
-          placeholder="Bir şeyler ara..."
+          placeholder="Bir ülke ara... (ingilizce)"
           onChange={(e) => setSearch(e.target.value)}
         />
         {isTyping && (
@@ -64,7 +55,7 @@ function App() {
             {result &&
               result.map((item) => (
                 <div key={item.id} className="search-result-item">
-                  {item.title}
+                  {item.name.common}
                 </div>
               ))}
             {!result && (
