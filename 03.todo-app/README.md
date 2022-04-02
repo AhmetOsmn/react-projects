@@ -4,11 +4,8 @@ Merhaba, React ile TODO uygualaması yapıyorum.
 
 Takip ettiğim kaynağa ulaşmak için [tıklayabilirsiniz.](https://www.youtube.com/watch?v=FeWTu1NhlBo)
 
-Projeyi çalıştırmak için
 
-    npm start
-
-# [DEMO](https://03-todo-app.netlify.app/)
+# [CANLI](https://03-todo-app.netlify.app/)
 
 # Ekran Görüntüleri
 

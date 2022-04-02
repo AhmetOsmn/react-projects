@@ -4,11 +4,8 @@ Merhaba, React ile basit bir para harcama uygualaması yapıyorum.
 
 Takip ettiğim kaynağa ulaşmak için [tıklayabilirsiniz.](https://www.youtube.com/watch?v=vWL5_Lapr7w)
 
-Projeyi çalıştırmak için
-
-    npm start
     
-#  [DEMO](https://02-para-harcama-uygulamasi.netlify.app/)
+# [CANLI](https://02-para-harcama-uygulamasi.netlify.app/)
 
 # Ekran Görüntüleri
 
