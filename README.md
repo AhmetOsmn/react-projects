@@ -16,3 +16,4 @@ React öğrenmek için yaptığım projeleri içerir.
 
 - [Autocomplete](https://github.com/AhmetOsmn/react-projects/tree/main/06.autocomplete-app) --- [Canlı](https://06-autocomplete.netlify.app/)
 
+- [Sticky Note](https://github.com/AhmetOsmn/react-projects/tree/main/07.sticky-note-app) --- [Canlı](https://07-sticky-note.netlify.app/)
