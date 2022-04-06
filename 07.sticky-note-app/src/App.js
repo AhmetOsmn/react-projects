@@ -9,17 +9,7 @@ function App() {
   const screen = useRef(null);
   const [mode, setMode] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [notes, setNotes] = useState([
-    {
-      id: "1",
-      note: "bu bir test notudur",
-      color: "red",
-      position: {
-        x: 350,
-        y: 300,
-      },
-    },
-  ]);
+  const [notes, setNotes] = useState(localStorage.notes && JSON.parse(localStorage.notes) || []);
   const [boxPosition, setBoxPosition] = useState({ x: 0, y: 0 });
   const [boxVisible, setBoxVisible] = useState(false);
 
@@ -27,33 +17,45 @@ function App() {
     position,
     boxPosition,
     setMode,
-    notes
+    notes,
+    setBoxVisible,
+    setNotes
   };
 
   useEffect(() => {
     screen.current.focus();
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem('notes', JSON.stringify(notes))
+  }, [notes])
+
   const handleKeyUp = (e) => {
     if (e.key === "c") {
       setMode(!mode);
       setBoxVisible(false)
     }
+
+    if (e.key === "Escape") {
+      setBoxVisible(false )
+    }
+
   };
 
   const handleMouseMove = (e) => {
-    setPosition({ x: e.pageX, y: e.pageY });
+    setPosition({ x: [e.pageX, e.clientX], y: [e.pageY, e.clientY] });
   };
 
   const handleClick = (e) => {
     if (mode) {
-      setBoxPosition({ x: position.x, y: position.y });
+      setBoxPosition({ x: position.x[0], y: position.y[0] });
       setBoxVisible(true);
     }
   };
 
   return (
     <MainContext.Provider value={data}>
+      <span style={{fontSize: 40}}>Kullanmak icin 'c' tuşuna basın. Notları sürükleyebilirsiniz.</span>
       <div
         ref={screen}
         tabIndex={0}
@@ -69,9 +71,7 @@ function App() {
 
         {mode && <LeaveCommentText />}
 
-        {mode && <div>yorum modu aktif</div>}
-
-        {notes && notes.map((note) => <Note {...note} />)}
+        {notes && notes.map((note, key) => <Note key={key} {...note} />)}
 
         {boxVisible && <NoteBox position={boxPosition} />}
       </div>

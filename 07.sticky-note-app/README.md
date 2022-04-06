@@ -7,6 +7,7 @@ Merhaba, bu projeyi PROTOTÜRK kanalındaki [şu eğitimi](https://www.youtube.c
 
 # Paketler
 
+        yarn add react-draggable
 
 # Ekran Görüntüleri
 
