@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import MainContext from '../MainContext'
 
 function LeaveCommentText() {
+
+  const {position} = useContext(MainContext)
+
   return (
-    <div>Yorum yazmak için tıkla</div>
+    <div className='leave-comment-text' style={{position: 'fixed', top: position.y, left: position.x + 20}}>Yorum yazmak için tıkla</div>
   )
 }
 
